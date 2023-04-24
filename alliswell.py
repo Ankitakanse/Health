@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
 from PIL import Image
-#from streamlit_option_menu import option_menu
+
 
 
 
@@ -24,12 +24,12 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-local_css("style/style.css")
+local_css("style.css")
 
 # ---- LOAD ASSETS ----
 lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
-img_contact_form = Image.open("images/legs.jpg")
-img_lottie_animation = Image.open("images/bellyfat1.jpg")
+img_contact_form = Image.open("legs.jpg")
+img_lottie_animation = Image.open("bellyfat1.jpg")
 
 # ---- HEADER SECTION ----
 
