@@ -113,7 +113,7 @@ with tab3:
 
             options = list(range(len(display)))
 
-            value = st.sidebar.selectbox("Gender", options, format_func=lambda x: display[x])
+            value = st.selectbox("Gender", options, format_func=lambda x: display[x])
 
             st.write(value)
         
